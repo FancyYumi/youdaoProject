@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <template>
   <div class="cloudNote">
     <div class="cn_header">
@@ -24,6 +25,13 @@
       </div>
     </div>
     <div></div>
+=======
+<template >
+  <div class="index" >
+    <h1>hello</h1>
+
+    <!-- <router-view></router-view> -->
+>>>>>>> 730408fbaad7badd8e95a20040f876ae81707413
   </div>
 </template>
 <script>

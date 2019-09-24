@@ -1,5 +1,5 @@
 <template>
-  <div class="index" v-title data-title="有道背单词">
+  <div class="index">
     <h1>hello</h1>
 
     <!-- <router-view></router-view> -->

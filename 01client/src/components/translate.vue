@@ -1,8 +1,7 @@
 <template>
-  <div class="index" v-title data-title="在线翻译-有道">
+  <div class="index" >
     <h1>hello</h1>
-
-    <!-- <router-view></router-view> -->
+    
   </div>
 </template>
 <script>
