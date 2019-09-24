@@ -1,6 +1,8 @@
+
 <template >
+
   <div id="index" >
-  hello
+  
     <!-- <translateForm v-on:formSubmit="translateText"></translateForm> -->
     <div>
       <!-- <h2>{{translatedText}}</h2> -->
@@ -9,6 +11,7 @@
 </template>
 
 <script>
+
 import Vue from "vue";
 import axios from "axios";
 import VueAxios from "vue-axios";
@@ -43,4 +46,10 @@ export default {
 };
 </script>
 <style scoped>
+
+#index{
+  width: 100%;
+  height: 20px;
+  background-color: beige;
+}
 </style>
