@@ -1,0 +1,13 @@
+.cn_header{
+    width: 100%;
+}
+
+.cn_headerBox{
+    width: 1200px;
+    height: 72px;
+    margin: 0 auto;
+    background-color: pink;
+}
+.cn_headerBox .logo{
+    
+}
