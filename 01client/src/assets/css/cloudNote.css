@@ -1,13 +1,72 @@
 .cn_header{
     width: 100%;
 }
-
 .cn_headerBox{
     width: 1200px;
-    height: 72px;
     margin: 0 auto;
-    background-color: pink;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-.cn_headerBox .logo{
-    
+.cn_headerBoxLeft{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+.cn_headerBoxLeft .logo{
+    margin: 18px 73px 17px 1px;
+}
+.cn_headerBox .logo img{
+    width: 153px;
+    height: 34px;
+}
+
+.cn_nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.cnhb-nav-itemNoSele {
+    box-sizing: border-box;
+    height: 72px;
+    padding: 0 7px;
+    margin: 0 12px 0 12px;
+    font-size: 16px;
+    line-height: 72px;
+    border-bottom: 2px #fefefe solid;
+    color: #7c808c;
+}
+
+.cnhb-nav-itemSele {
+    box-sizing: border-box;
+    height: 72px;
+    padding: 0 7px;
+    margin: 0 12px 0 12px;
+    font-size: 16px;
+    line-height: 72px;
+    border-bottom: 2px #3086f2 solid;
+    color: #3086f2;
+}
+.cnhb-nav-itemSele a:visited{
+    color: #3086f2 ;
+}
+.cnhb-nav-itemNoSele a:visited{
+    color: #7c808c ;
+}
+.cnhb-nav-itemNoSele:hover,
+.cnhb-nav-itemSele:hover{
+    border-bottom: 2px #3086f2 solid;
+    color: #3086f2;
+}
+.cnhb-nav-itemNoSele:hover a,
+.cnhb-nav-itemSele:hover a{
+    color: #3086f2;
+}
+
+.cn_header .right{
+    margin: 17px 0px 15px 0px;
+    width: 265px;
+    height: 40px;
+    background-color: pink;
 }
