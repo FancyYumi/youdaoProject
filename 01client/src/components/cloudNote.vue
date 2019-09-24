@@ -1,22 +1,35 @@
 <template>
-  <div class="index" v-title data-title="有道云笔记|5000万用户的选择">
-    <h1>hello</h1>
-
+  <div class="cloudNote" v-title data-title="有道云笔记|5000万用户的选择">
+    <div class="cn_header">
+      <div class="cn_headerBox">
+        <a href="/cloudNote" class="logo">
+        <img src="url" alt="" srcset="">
+        </a>
+        <div class="nav"></div>
+        <div class="right"></div>
+      </div>
+    </div>
+    <div></div>
     <!-- <router-view></router-view> -->
   </div>
 </template>
 <script>
-import Vue from "vue";
-import axios from "axios";
-import VueAxios from "vue-axios";
-Vue.use(VueAxios, axios);
 export default {
   data: function() {
-    return {};
+    
+    return {
+      imgUrl:{}
+    };
   },
 
-  methods() {}
+  mounted(){
+    this.axios.get('http://localhost:8888/cloudNote').then((res)=>{
+      console.log(data)
+      this.imgUrl = res.data;
+    })
+  }
 };
 </script>
 <style scoped>
+@import '../assets/css/cloudNote.css'
 </style>

@@ -1,7 +1,6 @@
 <template>
   <div class="index" v-title data-title="有道首页">
     <h1>hello</h1>
-
     <!-- <router-view></router-view> -->
   </div>
 </template>

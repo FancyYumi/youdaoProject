@@ -26,11 +26,15 @@ app.all("*", function(req, res, next) {
 let ip = "localhost:";
 let port = 8888;
 
+
 let indexController = require("./controllers/IndexController");
 app.get("/index", indexController.index);
+
+let cloudNoteController = require("./controllers/CloudNoteController");
+app.get("/cloudNote", cloudNoteController.cloudNote);
 
 
 //4,进行监听
 app.listen(port, function() {
-  console.log("启动");
+  console.log(`${port}启动`);
 });

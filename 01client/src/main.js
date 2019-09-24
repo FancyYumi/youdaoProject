@@ -3,7 +3,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
-
+import 'animate.css'
 import App from './App.vue'
 
 import index from './components/index.vue'
