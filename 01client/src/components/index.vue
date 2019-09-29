@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 <template >
   <div id="index">
     <div class="header">
@@ -144,6 +145,14 @@
       </div>
     </div>
   </div>
+=======
+<template>
+  <div class="index" v-title data-title="有道背单词">
+    <h1>hello</h1>
+ </div>
+
+
+>>>>>>> a2192f30034d235973a2df89edb79c2272e5aa39
 </template>
 
 <script>
@@ -153,8 +162,11 @@ import VueAxios from "vue-axios";
 Vue.use(VueAxios, axios);
 
 import translateForm from "./translateForm";
+<<<<<<< HEAD
 import conBox1 from "./conBox1";
 
+=======
+>>>>>>> a2192f30034d235973a2df89edb79c2272e5aa39
 export default {
   name: "index",
   data: function() {
@@ -163,8 +175,12 @@ export default {
     };
   },
   components: {
+<<<<<<< HEAD
     translateForm,
     conBox1
+=======
+     translateForm
+>>>>>>> a2192f30034d235973a2df89edb79c2272e5aa39
   },
   methods: {
     translateText: function(text, language) {
@@ -199,5 +215,10 @@ export default {
 };
 </script>
 <style scoped>
+<<<<<<< HEAD
 @import "../assets/style/index.css";
+=======
+
+
+>>>>>>> a2192f30034d235973a2df89edb79c2272e5aa39
 </style>

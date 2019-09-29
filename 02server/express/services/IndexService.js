@@ -1,12 +1,13 @@
 //引入模块
-let CourseService = require("./CourseService");
+
+let Indexservice = require("../model/IndexModel");
 
 class IndexService {
   constructor() {}
   getData(callback) {
-    let courseService = new CourseService();
+    let indexService = new Indexservice();
     //获得数据
-    courseService.getCourses(function(courses) {
+    indexService.getCourses(function(courses) {
       callback(courses);
     });
   }

@@ -13,8 +13,6 @@ let urlencodedParser = bodyParser.urlencoded({
 app.use(express.static("public"));
 //6,设置跨域访问
 app.all("*", function(req, res, next) {
-  //res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Origin", "http://192.168.3.122:3000");
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "X-Requested-With");
   res.header("Access-Control-Allow-Methods", "PUT,POST,GET,DELETE,OPTIONS");
@@ -26,15 +24,27 @@ app.all("*", function(req, res, next) {
 let ip = "localhost:";
 let port = 8888;
 
+
 let indexController = require("./controllers/IndexController");
 app.get("/index", indexController.index);
 
+<<<<<<< HEAD
 let cloudPicController = require("./controllers/CloudPicController");
 app.get("/pic", cloudPicController.pic);
+=======
+let cloudNoteController = require("./controllers/CloudNoteController");
+app.get("/cloudNote", cloudNoteController.cloudNote);
+
+let humanTransController = require("./controllers/HumanTransController");
+app.get("/humanTrans", humanTransController.humanTrans);
+
+let humanTransCommentsController = require("./controllers/humanTransCommentsController");
+app.get("/humanTransComments", humanTransCommentsController.comments);
+>>>>>>> a2192f30034d235973a2df89edb79c2272e5aa39
 
 let readController = require("./controllers/ReadController");
 app.get("/read", readController.data);
 //4,进行监听
 app.listen(port, function() {
-  console.log("启动");
+  console.log(`${port}启动`);
 });
