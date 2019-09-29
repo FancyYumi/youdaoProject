@@ -29,7 +29,11 @@ let port = 8888;
 let indexController = require("./controllers/IndexController");
 app.get("/index", indexController.index);
 
+let cloudPicController = require("./controllers/CloudPicController");
+app.get("/pic", cloudPicController.pic);
 
+let readController = require("./controllers/ReadController");
+app.get("/read", readController.data);
 //4,进行监听
 app.listen(port, function() {
   console.log("启动");

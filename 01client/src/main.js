@@ -19,6 +19,7 @@ import courses from './components/courses.vue'
 import cloudNote from './components/cloudNote.vue'
 import humanTrans from './components/humanTrans.vue'
 
+// import 'jquery'
 
 const routes = [
   { path: '/index', component: index, meta: { title: '有道首页'}},
