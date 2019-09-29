@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-<template>
-  <div class="index" v-title data-title="有道首页">
-    <h1>hello</h1>
-    <!-- <router-view></router-view> -->
-=======
 
 <template >
 
@@ -13,7 +7,6 @@
     <div>
       <!-- <h2>{{translatedText}}</h2> -->
     </div>
->>>>>>> 730408fbaad7badd8e95a20040f876ae81707413
   </div>
 </template>
 

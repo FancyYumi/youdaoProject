@@ -1,0 +1,422 @@
+/**
+* header
+*/
+.headerBox{
+    width: 100%;
+    height: 55px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.ht_header{
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    z-index: 999;
+}
+.ht_headerBox{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+}
+.ht_headerBoxLeft{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+.ht_headerBoxLeft .logo{
+    margin: 14px 64px 0 0;
+}
+.ht_headerBox .logo img{
+    width: 219px;
+    height: 33px;
+}
+
+.ht_nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.hthb-nav-itemNoSele {
+    box-sizing: border-box;
+    height: 55px;
+    margin: 0 21px;
+    font-size: 14px;
+    line-height: 57px;
+    border-bottom: 2px #fefefe solid;
+    color: #474747;
+}
+
+.hthb-nav-itemSele {
+    box-sizing: border-box;
+    height: 55px;
+    margin: 0 21px;
+    font-size: 14px;
+    line-height: 57px;
+    border-bottom: 2px #fc3a4e solid;
+    color: #fc3a4e;
+}
+.hthb-nav-itemSele a:visited{
+    color: #fc3a4e ;
+}
+.hthb-nav-itemNoSele a:visited{
+    color: #474747 ;
+}
+.hthb-nav-itemNoSele:hover{
+    color: #989898;
+}
+.hthb-nav-itemSele:hover{
+    border-bottom: 2px #fc3a4e solid;
+    color: #fc3a4e;
+}
+.hthb-nav-itemSele a{
+    color: #fc3a4e ;
+}
+.hthb-nav-itemNoSele a{
+    color: #989898 ;
+}
+.hthb-nav-itemNoSele:hover a{
+    color: #989898;
+}
+.hthb-nav-itemSele:hover a{
+    color: #fc3a4e;
+}
+
+.icon-down{
+    width: 13px;
+    height: 6px;
+    background: url(../img/humanTrans/down.png)  0 0 no-repeat;
+}
+
+.hthb-right{
+    box-sizing: border-box;
+    position: relative;
+    width: 90px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #434343;
+}
+
+.hthb-right a{
+    text-align: center;
+    text-decoration: none;
+}
+
+.hthb-right a:hover{
+    color: #0369dc;
+}
+
+
+/**
+* ht_banner
+*/
+.ht_banner {
+	width: 100%;
+	height: 256px;
+	overflow: hidden;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+.ht_imgBox{
+    width: 100%;
+}
+.lunbo_item img{
+    width: 1200px;
+    height: 256px;
+}
+
+.ht_banner .circle {
+    position: absolute;
+    right: 156px;
+    bottom: 50px;
+    height: 10px;
+    z-index: 10;
+}
+
+.ht_banner .circle .active{
+	background-color: #f93d52;
+}
+.ht_banner .circle .noActive{
+    background-color: #d2cdc9;
+}
+
+.ht_banner .circle li {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	float: left;
+    margin-right: 10px;
+	background-color: #d2cdc9;
+}
+
+/**
+*  pay_price
+*/
+.pay_price{
+    text-align: center;
+    position: relative;
+    top: 24px;
+    height: 52px;
+    line-height: 52px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #2B333D;
+    z-index: 2;
+}
+.pay_price_text{
+    background-color: white;
+    padding: 0 5px;
+}
+.pay_price_text .text_notice{
+    font-family: SourceHanSansCN-Bold;
+    font-size: 30px;
+    color: #FB3A4D;
+    letter-spacing: 0;
+    line-height: 32px;
+    padding: 0 4px;
+    font-weight: bold;
+}
+
+/**
+*  pay_priceList
+*/
+.pay_priceList{
+    width: 1200px;
+    height: 240px;
+    margin: 0 auto;
+    background: white;
+    overflow: hidden;
+    border: 1px solid #EDEEF0;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+}
+.pp_listItem{
+    box-sizing: border-box;
+    width: 25%;
+    height: 240px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.cell_icon{
+    width: 48px;
+    height: 48px;
+    display: block;
+    margin: 0 auto;
+}
+.cell_intro{
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+.cell_title{
+    font-size: 18px;
+    font-family: PingFangSC-Semibold;
+    font-weight: 600;
+    color: rgba(43,51,61,1);
+    line-height: 18px;
+    margin: 16px auto 8px;
+}
+
+.cell_text{
+    margin-top: 0;
+    margin-bottom: 6px;
+    font-size: 12px;
+    font-family: PingFangSC-Light;
+    font-weight: 400;
+    color: rgba(99,105,112,1);
+    line-height: 21px;
+}
+.cell_notice_text1{
+    font-family: PingFangSC-Semibold;
+    font-size: 13px;
+    color: red;
+    letter-spacing: 0;
+    line-height: 21px;
+}
+.cell_notice_text2{
+    font-family: PingFangSC-Semibold;
+    font-size: 13px;
+    color: #001500;
+    letter-spacing: 0;
+    line-height: 21px;
+}
+.cell_click{
+    font-size: 12px;
+    width: 80px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: #FB3A4D;
+    border-radius: 2px;
+    display: block;
+    transition: all 0.1s ease-in;
+    margin: 12px auto 23px;
+    border: 1px solid rgba(251,58,77,0.30);
+}
+.cell_click:hover{
+    background: #FB3A4D;
+    border-radius: 3px;
+    color: white;
+}
+
+
+/**
+* type
+*/
+.ht_type{
+    width: 100%;
+    text-align: center;
+}
+.ht_typeBox{
+    box-sizing: border-box;
+    width: 1200px;
+    height: 168px;
+    max-width: 1200px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    padding: 12px;
+    margin: 0 auto;
+}
+.type_item{
+    width: 16.66%;
+    float: left;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.type_item:hover{
+    height: 150px;
+    background: #FFFFFF;
+    box-shadow: 0 0 12px 0 rgba(82,139,204,0.08);
+    border-radius: 4px;
+}
+.type_item:hover .type_icon{
+    margin-top: 8px;
+}
+.type_item:hover .type_infor{
+    display: block;
+}
+.type_icon{
+    height: 48px;
+    width: 48px;
+    margin: 18px auto 0;
+}
+.type_title{
+    font-family: PingFangSC-Semibold;
+    font-size: 14px;
+    color: #2B333D;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 14px;
+}
+.type_infor{
+    display: none;
+    margin-top: 12px;
+    font-family: PingFangSC-Light;
+    font-size: 12px;
+    color: #A3A8AD;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 16px;
+    margin-bottom: 19px;
+}
+
+
+/**
+* brand_customer
+*/
+.brand_customer{
+    min-width: 1200px;
+    overflow: hidden;
+    height: 500px;
+    background: url(../img/humanTrans/pic_CustomerBg.png) 50% 50% no-repeat;
+    background-size: cover;
+}
+.brand_customer_content{
+    text-align: center;
+    margin: 76px auto;
+}
+.brand_title{
+    font-family: PingFangSC-Semibold;
+    font-size: 32px;
+    color: #2B333D;
+    letter-spacing: 0;
+    line-height: 32px;
+}
+.brand_line{
+    display: block;
+    background: #E1E3E6;
+    margin: 16px auto 0;
+    width: 40px;
+    height: 2px;
+}
+.brand_customer_image{
+    margin: 0 auto;
+    width: 1177px;
+    height: 187px;
+}
+.brand_customer_image img{
+    width: 1177px;
+    height: 187px;
+}
+
+/**
+* interpreter
+*/
+.interpreter{
+    background: url(../img/humanTrans/expertsBG.png) 50% 50% no-repeat;
+}
+.interpreter_content{
+    height: 500px;
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.interpreter_infor{
+    margin-top: 122px;
+}
+.interpreter_title{
+    font-family: PingFangSC-Semibold;
+    font-size: 32px;
+    color: #2B333D;
+    letter-spacing: 0;
+    line-height: 32px;
+}
+.interpreter_line{
+    background: #E1E3E6;
+    width: 40px;
+    height: 2px;
+    margin-top: 16px;
+}
+.interpreter_text{
+    width: 432px;
+    font-size: 16px;
+    color: #636970;
+    letter-spacing: 0;
+    line-height: 32px;
+    margin-top: 32px;
+    opacity: 0.7;
+    font-family: PingFangSC-Light;
+    text-align: justify;
+}
+.img_1x{
+    position: absolute;
+    bottom: 0;
+    left: 320px;
+    display: block;
+}
+

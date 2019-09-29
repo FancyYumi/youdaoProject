@@ -1,3 +1,6 @@
+body{
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -15,4 +18,7 @@ a:hover {
 }
 a:active{
     text-decoration: none;  
+}
+p{
+    margin: 0;
 }

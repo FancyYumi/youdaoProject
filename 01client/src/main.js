@@ -6,15 +6,13 @@ Vue.use(VueAxios, axios)
 //axios组件
 import axios from 'axios'
 import VueAxios from 'vue-axios'
-<<<<<<< HEAD
 import 'animate.css'
-=======
+
 Vue.use(VueRouter)
 //网页title组件
 import VueWechatTitle from 'vue-wechat-title'
 Vue.use(VueWechatTitle)
 //网页组件
->>>>>>> 730408fbaad7badd8e95a20040f876ae81707413
 import App from './App.vue'
 import index from './components/index.vue'
 import reciteWords from './components/reciteWords.vue'
