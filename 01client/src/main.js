@@ -1,6 +1,10 @@
 
 import Vue from 'vue'
-//路由
+
+
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+
 import VueRouter from 'vue-router'
 Vue.use(VueAxios, axios)
 //axios组件
@@ -20,6 +24,14 @@ import translate from './components/translate.vue'
 import courses from './components/courses.vue'
 import cloudNote from './components/cloudNote.vue'
 import humanTrans from './components/humanTrans.vue'
+
+
+
+Vue.use(VueRouter)
+Vue.use(VueAxios, axios)
+Vue.use(ElementUI);
+
+Vue.config.productionTip = false
 
 
 const routes = [

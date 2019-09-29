@@ -1,13 +1,10 @@
 
-<template >
+<template>
+  <div class="index" v-title data-title="有道背单词">
+    <h1>hello</h1>
+ </div>
 
-  <div id="index" >
-  
-    <!-- <translateForm v-on:formSubmit="translateText"></translateForm> -->
-    <div>
-      <!-- <h2>{{translatedText}}</h2> -->
-    </div>
-  </div>
+
 </template>
 
 <script>
@@ -17,7 +14,7 @@ import axios from "axios";
 import VueAxios from "vue-axios";
 Vue.use(VueAxios, axios);
 
-// import translateForm from "./translateForm";
+import translateForm from "./translateForm";
 export default {
   name: "index",
   data: function() {
@@ -26,7 +23,7 @@ export default {
     };
   },
   components: {
-    // translateForm
+     translateForm
   },
   methods: {
     translateText: function(text, language) {
@@ -47,9 +44,5 @@ export default {
 </script>
 <style scoped>
 
-#index{
-  width: 100%;
-  height: 20px;
-  background-color: beige;
-}
+
 </style>

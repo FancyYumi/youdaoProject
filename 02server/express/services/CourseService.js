@@ -1,6 +1,7 @@
 //引入模块
 let CourseModel = require("../model/CourseModel");
-
+let CourseModell = require("../model/CourseModell");
+let CourseModelll = require("../model/CourseModelll");
 class CourseService {
   constructor() {}
   getCourses(callback) {
@@ -8,9 +9,20 @@ class CourseService {
   
     //获得数据
     courseModel.getAllCourse(function(courses) {
-      //获得每个课程
+      let courseModell=new CourseModell()
+      courseModell.getAllCourse(function(cp){
+        let courseModelll=new CourseModelll();
+        courseModelll.getAllCourse(function(io){
+          let ob={
+            cidian:courses,
+            tupian:cp,
+            grade:io
+          }
+          callback(ob)
+        })
+      })
       
-            callback(courses);
+            
         
     });
   }

@@ -6,7 +6,7 @@ class CourseModel extends SqlBase {
   }
   getAllCourse(callback) {
     //3,编写sql语句
-    let sql = "select * from taobao";
+    let sql = "select * from boxbox";
     //4,进行插入操作
     /**
      *query，mysql语句执行的方法
