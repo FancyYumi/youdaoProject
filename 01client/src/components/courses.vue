@@ -1,4 +1,5 @@
 <template>
+
   <div>
     <div class="headerbox" v-title data-title="有道精品课-为你精选好课">
       <div class="headerbox2">
@@ -11,6 +12,7 @@
               data-reactid="5"
             />
           </a>
+
 
           <a href="/?keyfrom=dict2.index&amp;Pdt=CourseWeb" data-reactid="7">首页</a>
           <a href="/download?keyfrom=dict2.index&amp;Pdt=CourseWeb" data-reactid="8">APP下载</a>
@@ -202,8 +204,8 @@ export default {
     Vue.axios.get(`http://localhost:8888/course`).then(response => {
       console.log(response);
       this.box = response.data.cidian;
-      this.tupian = response.data.tupian;
-      this.grade = response.data.grade;
+      this.tupian = response.data.grade;
+      this.grade = response.data.tupian;
     });
   },
   methods() {}

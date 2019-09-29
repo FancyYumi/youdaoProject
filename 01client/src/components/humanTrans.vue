@@ -1,5 +1,5 @@
 <template>
-  <div class="index" v-title data-title="有道人工翻译-网易旗下专业人工翻译">
+  <div class="index" >
     <h1>hello</h1>
 
     <!-- <router-view></router-view> -->

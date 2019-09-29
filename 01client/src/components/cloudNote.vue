@@ -1,5 +1,5 @@
-<template>
-  <div class="index" v-title data-title="有道云笔记|5000万用户的选择">
+<template >
+  <div class="index" >
     <h1>hello</h1>
 
     <!-- <router-view></router-view> -->
