@@ -32,7 +32,7 @@
     </div>
     <div class="ht_banner">
       <ul class="ht_imgBox">
-        <li v-for="item in imgUrl" v-bind:key="item.id" class="lunbo_item">
+        <li v-for="item in imgUrl" v-bind:key="item.id" class="lunbo_item animated fadeIn">
           <img :src="item.imgUrl" alt />
         </li>
       </ul>

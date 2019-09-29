@@ -59,33 +59,33 @@
           <div class="wrap wrap-a">
             <div class="a-imgBox">
               <img
-                class="ic-cone"
+                class="ic-cone animated"
                 src="https://shared-https.ydstatic.com/market/ynote-website/ic-cone.svg"
                 alt
               />
               <img
-                class="bigOne"
+                class="bigOne animated"
                 src="https://shared-https.ydstatic.com/market/ynote-website/ic-01-win@2x.png"
                 alt
               />
               <div class="icBox">
                 <img
-                  class="ic-item ic-red"
+                  class="ic-item ic-red animated"
                   src="https://shared-https.ydstatic.com/market/ynote-website/ic-01-red.svg"
                   alt
                 />
                 <img
-                  class="ic-item ic-yellow"
+                  class="ic-item ic-yellow animated"
                   src="https://shared-https.ydstatic.com/market/ynote-website/ic-01-yellow.svg"
                   alt
                 />
                 <img
-                  class="ic-item ic-green"
+                  class="ic-item ic-green animated"
                   src="https://shared-https.ydstatic.com/market/ynote-website/ic-01-green.svg"
                   alt
                 />
                 <img
-                  class="ic-item ic-blue"
+                  class="ic-item ic-blue animated"
                   src="https://shared-https.ydstatic.com/market/ynote-website/ic-01-blue-1.svg"
                   alt
                 />
@@ -362,9 +362,9 @@
         </li>
       </ul>
       <div class="line"></div>
-      <div class="copyRight">
-        ©2019&nbsp;北京网易有道计算机系统有限公司&nbsp;京ICP证080268号&nbsp;&nbsp;&nbsp;&nbsp;违法和不良信息举报电话：010-82558163
-      </div>
+      <div
+        class="copyRight"
+      >©2019&nbsp;北京网易有道计算机系统有限公司&nbsp;京ICP证080268号&nbsp;&nbsp;&nbsp;&nbsp;违法和不良信息举报电话：010-82558163</div>
     </div>
   </div>
 </template>
@@ -391,7 +391,7 @@ export default {
     },
     zhuxiao: function() {
       this.isWeb = !this.isWeb;
-    }
+    },
   },
 
   mounted() {
@@ -402,6 +402,7 @@ export default {
     this.axios.get("http://localhost:8888/cloudNoteUrl").then(res => {
       that.imgUrl = res.data;
     });
+    
   }
 };
 </script>

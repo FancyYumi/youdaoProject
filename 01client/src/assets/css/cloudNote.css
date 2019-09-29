@@ -392,6 +392,7 @@
     position: absolute;
     width: 363px;
     height: 553px;
+    right: 0;
 }
 .ic-logo {
     position: absolute;
@@ -490,6 +491,7 @@
     height: 472px;
     width: 775px;
     top: 0;
+    right: 0;
 }
 .ic-04-iphone{
     width: 159px;
@@ -711,4 +713,17 @@
     padding-top: 32px;
     opacity: 0.6;
     margin: 0 auto;
+}
+
+.lunbo_item_block{
+    display: block;
+}
+.lunbo_item_none{
+    display: none;
+}
+.ht_banner .circle .active{
+	background-color: #f93d52;
+}
+.ht_banner .circle .noActive{
+    background-color: #d2cdc9;
 }

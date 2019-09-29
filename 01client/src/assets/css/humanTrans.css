@@ -134,6 +134,12 @@
     width: 1200px;
     height: 256px;
 }
+.lunbo_item_block{
+    display: block;
+}
+.lunbo_item_none{
+    display: none;
+}
 
 .ht_banner .circle {
     position: absolute;
