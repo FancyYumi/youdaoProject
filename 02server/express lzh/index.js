@@ -27,7 +27,9 @@ let ip = "localhost:";
 let port = 8888;
 
 let indexController = require("./controllers/IndexController");
+let course = require("./controllers/course");
 app.get("/index", indexController.index);
+app.get("/course", course.index);
 
 
 //4,进行监听

@@ -1,5 +1,9 @@
 
 import Vue from 'vue'
+
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+
 import VueRouter from 'vue-router'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
@@ -16,6 +20,7 @@ import humanTrans from './components/humanTrans.vue'
 
 Vue.use(VueRouter)
 Vue.use(VueAxios, axios)
+Vue.use(ElementUI);
 
 Vue.config.productionTip = false
 

@@ -1,0 +1,377 @@
+.headerbox{
+    width: 100%;
+    height: 60px;
+    background: #00d87d
+  }
+  .headerbox2{
+      width: 90%;
+      height: 100%;
+     
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center
+  }
+  .headerbox3{
+      width: 75%;
+      height: 100%;
+     
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      align-content: center;
+      line-height:  100%;
+  }
+
+._2in7G{
+    width: 129px;
+    height: 32px;
+    margin-top: 12px;
+    font-size: 28px
+}
+
+.headerbox3 a{
+    line-height: 60px;
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+}
+#LMmqN{
+    width: 129px;
+    height: 60px;
+ }
+ .input{
+     width: 410px;
+     height: 45px;
+     font-size: 16px;
+ }
+ .headerbox4 a{
+    line-height: 60px;
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+}
+.mainbox{
+    height: 50px;
+    width: 100%;
+    
+    box-shadow:0px 3px 6px 2px #b3d4fc;
+}
+a{
+    text-decoration: none
+}
+.mainbox2{
+    width: 88%;
+    height: 100%;
+  
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.grade{
+    height: 100%;
+}
+.display{
+    position: absolute;
+    height: 100px;
+    width: 110px;
+    background: #99a9bf;
+    display: none;
+    z-index: 10;
+    top: 53px;
+    left: -25px;
+}
+.alin{
+    height: 100%;
+    color: #818a92;
+    font-size: 14px;
+    line-height: 50px;
+    position: relative;
+}
+/* .alin:hover .display{
+    display: block;
+  
+} */
+.alin:hover{
+    border-bottom: 2px solid #00d87d
+}
+.tit{
+    font-weight: 300;
+    font-size: 14px;
+    color: #818a92;
+}
+.block{
+    width: 90%;
+  
+    margin: 0 auto
+}
+.span{
+    height: 35px;
+}
+
+  .img{
+    height:360px ;
+    width:1300px;
+    position: relative;
+  }
+
+  .el-carousel__item:nth-child(2n) {
+     background-color: #99a9bf;
+     position: absolute;
+     bottom: 0px;
+     
+  }
+  
+  .el-carousel__item:nth-child(2n+1) {
+     background-color: #d3dce6;
+     position: absolute;
+     bottom: 0px;
+  }
+  .hot{
+    width: 90%;
+    height: 90px;
+    margin: 0 auto;
+   
+    text-align: left;
+    line-height: 90px;
+    font-size: 26px;
+    font-weight: 600;
+    color: #31404c;
+  }
+  .boxbox{
+    width: 90%;
+    height: 300px;
+
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .boxboxe{
+    width: 100%;
+    height: 300px;
+
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .boxbox a{
+    height: 100%;
+    width: 24%;
+    border: 1px solid #e4f0e2;
+    text-decoration: none;
+    border-radius: 0 0 4px 4px;
+    border-top: 2px solid #e4f0e2;
+  }
+  .boxboxe a{
+    height: 100%;
+    width: 24%;
+    border: 1px solid #e4f0e2;
+    text-decoration: none;
+    border-radius: 0 0 4px 4px;
+    border-top: 2px solid #e4f0e2;
+  }
+  .boxbox a:hover{
+      transform: translateY(-5px);
+      transition: 0.8s;
+        box-shadow:0px 3px 6px 6px #b3d4fc;
+        border-top: 4px solid #00d87d;
+      
+  }
+  .boxboxe a:hover{
+    transform: translateY(-5px);
+    transition: 0.8s;
+      box-shadow:0px 3px 6px 6px #b3d4fc;
+      border-top: 4px solid #00d87d;
+}
+ .yingyu{
+    height: 18px;
+    width: 60px;
+    background: #a7b0b8;
+    border-radius: 2px;
+    font-size: 12px;
+    color: #fff;
+    line-height: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+ }
+ .text{
+    font-size: 18px;
+    font-weight: 600;
+    color: #31404c;
+    height: 42px;
+    margin-bottom: 5px;
+    width: 214px;
+    margin: 0 auto;
+    text-align: left
+ }
+ .data{
+    font-size: 12px;
+    color: #818a92;
+    font-weight: 300;
+ }
+ .touxiang{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid #f5f5f5;
+    margin-bottom: 5px;
+    background: #00d87d;
+ }
+ .touxiang img{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid #f5f5f5;
+    margin-bottom: 5px;
+    background: #00d87d;
+ }
+
+
+ .itembox{
+    width: 260px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 12px
+ }
+ .he{
+     display: flex;
+     flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start
+    
+ }
+ .touxiangbox{
+     width: 100%;
+     height: 90px;
+     border-bottom: 2px solid #f5f5f5;
+    
+ }
+ .mingzi{
+     text-align: left;
+     color: #31404c
+ }
+.renshu{
+    color: #818a92;
+    font-size: 12px;
+    font-weight: 300
+}
+.m{
+    font-size: 20px;
+    color: #ff773a;
+    font-weight: 300;
+}
+.mianfei{
+width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  
+}
+.tupian{
+    height: 200px;
+    width: 90%;
+   
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between
+}
+.tupian a{
+    height: 200px;
+    width: 30%;
+  
+}
+.n{
+    width: 100%;
+    margin-top: 50px
+}
+.r{
+    width: 100%
+}
+
+.tupian a:hover{
+    transform: translateY(-5px);
+      transition: 0.8s;
+        box-shadow:0px 8px 16px 3px #b3d4fc
+      
+}
+.tu1{
+    height: 100%;
+    width: 100%;
+    background: red;
+  
+}
+.position{
+    width: 100%;
+    height: 100%;
+    position: relative
+}
+.htext{
+    font-size: 24px;
+    color: #fff;
+    position: absolute;
+   width: 93%;
+    font-weight: 400;
+    text-shadow: 0 0 3px rgba(0,0,0,.3);
+    height: 70px;
+    top: 30px;
+    left: 20px;
+    z-index: 10;
+    text-align: left
+}
+.button{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    display: inline-block;
+    font-size: 14px;
+    width: 90px;
+    height: 32px;
+    text-align: center;
+    background: #ff773a;
+    border-radius: 100px;
+    line-height: 32px;
+    color: #fff
+}
+.secondbody{
+    margin-top: 50px;
+    height: 1095px;
+    margin-top: 30px;
+    width: 100%;
+    background: #f5f5f5;
+}
+.pq{
+    
+    height: 100%;
+    width: 282px;
+    border: 1px solid #e4f0e2;
+    text-decoration: none;
+    border-radius: 0 0 4px 4px;
+    border-top: 2px solid #e4f0e2;
+}
+.bigbox{
+    width: 90%;
+    height: 600px;
+    margin: 0 auto;
+   
+    display: flex;
+    justify-content: space-between;
+  flex-direction: column
+    
+}
+.pp{
+    display: flex;
+    justify-content: space-between
+}
+.ab{
+    width: 580px;
+   height: 272px;
+}
+.op{
+    width: 600px;
+   height: 272px;
+}
