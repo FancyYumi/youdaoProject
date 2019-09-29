@@ -195,6 +195,60 @@
         <img class="img_1x" :src="img.experts" />
       </div>
     </div>
+    <div class="client_thinking_wrap">
+      <div class="client_thinking">
+        <div class="client_title">客户心声摘录</div>
+        <div class="client_sub_title">累计服务客户超过100万，用户满意度高达99%</div>
+        <ul class="client_tags_con">
+          <li>挺专业的</li>
+          <li>超快</li>
+          <li>有保障</li>
+          <li>朋友推荐的</li>
+          <li>客服声音好听</li>
+          <li>信赖有道</li>
+        </ul>
+        <ul class="client_thinking_list">
+          <li v-for="item in comments" v-bind:key="item.id">
+            <span class="comma"></span>
+            <span class="comma_reverse"></span>
+            <div class="thinking">{{item.text}}</div>
+            <div class="client_infoBox">
+              <img class="client_info_img" :src="item.headUrl" />
+              <div class="client_info">
+                <div class="client_name">{{item.name}}</div>
+                <div
+                  class="order_info"
+                >{{item.charNumber}}字，{{item.level}}，{{item.type}}，{{item.time}}天交稿</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="ft">
+      <p>
+        <a href="http://fanyi.youdao.com" target="_blank" rel="nofollow">有道翻译</a>-
+        <a href="http://www.youdao.com" target="_blank" rel="nofollow">有道首页</a>-
+        <a href="https://ke.youdao.com/?keyfrom=f.youdao" target="_blank" rel="nofollow">有道精品课</a>-
+        <a href="http://www.youdao.com/about/index.html" target="_blank" rel="nofollow">关于有道</a>-
+        <a href="http://i.youdao.com" target="_blank" rel="nofollow">官方博客</a>-
+        <a href="http://dsp.youdao.com" target="_blank" rel="nofollow">有道智选</a>-
+        <a href="/?path=terms-of-service" target="_blank" rel="nofollow">有道人工翻译服务条款</a>-
+        <a
+          href="http://survey2.163.com/html/zyfy_satisfiction/paper.html?site=fankui"
+          class="clog-js"
+          data-act="feedback"
+          target="_blank"
+          rel="nofollow"
+        >意见反馈</a>
+      </p>
+
+      <p>
+        <span>©2019</span>
+        <span>网易公司</span>
+        <span>京ICP证080268号</span>
+      </p>
+    </div>
   </div>
 </template>
 <script>
@@ -208,6 +262,7 @@ export default {
     return {
       img: [],
       imgUrl: [],
+      comments: [],
       navTitle: [
         { id: 0, title: "首页" },
         { id: 1, title: "快速翻译" },
@@ -237,6 +292,9 @@ export default {
     });
     this.axios.get("http://localhost:8888/humanTrans").then(res => {
       that.imgUrl = res.data;
+    });
+    this.axios.get("http://localhost:8888/humanTransComments").then(res => {
+      that.comments = res.data;
     });
     banner();
   }

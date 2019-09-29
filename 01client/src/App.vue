@@ -8,7 +8,7 @@
 export default {
   name: 'App',
     mounted () {
-    this.$router.push('./cloudNote')
+    this.$router.push('./humanTrans')
   }
 }
 </script>

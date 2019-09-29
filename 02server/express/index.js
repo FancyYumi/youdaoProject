@@ -34,6 +34,8 @@ app.get("/cloudNote", cloudNoteController.cloudNote);
 let humanTransController = require("./controllers/HumanTransController");
 app.get("/humanTrans", humanTransController.humanTrans);
 
+let humanTransCommentsController = require("./controllers/humanTransCommentsController");
+app.get("/humanTransComments", humanTransCommentsController.comments);
 
 //4,进行监听
 app.listen(port, function() {

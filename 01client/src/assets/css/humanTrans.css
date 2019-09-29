@@ -9,7 +9,6 @@
     position: relative;
 }
 .ht_header{
-    width: 100%;
     position: fixed;
     background-color: #fff;
     z-index: 999;
@@ -28,12 +27,11 @@
     display: flex;
     flex-direction: row;
 }
-.ht_headerBoxLeft .logo{
-    margin: 14px 64px 0 0;
-}
+
 .ht_headerBox .logo img{
+    margin: 12px 64px 0 0;
     width: 219px;
-    height: 33px;
+    height: 36px;
 }
 
 .ht_nav{
@@ -101,7 +99,7 @@
     font-size: 14px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     color: #434343;
 }
 
@@ -109,9 +107,11 @@
     text-align: center;
     text-decoration: none;
 }
-
 .hthb-right a:hover{
-    color: #0369dc;
+    color: #434343;
+}
+.hthb-right a:visited{
+    color: #434343;
 }
 
 
@@ -395,6 +395,7 @@
     color: #2B333D;
     letter-spacing: 0;
     line-height: 32px;
+    text-align: left;
 }
 .interpreter_line{
     background: #E1E3E6;
@@ -419,4 +420,160 @@
     left: 320px;
     display: block;
 }
+.client_thinking_wrap{
+    background-color: #F7F9FA;
+    overflow: hidden;
+    min-width: 1200px;
+}
+.client_thinking{
+    width: 1200px;
+    margin: 85px auto 58px auto;
+}
+.client_title{
+    font-family: PingFangSC-Semibold;
+    font-size: 32px;
+    line-height: 32px;
+    color: #2B333D;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.client_sub_title{
+    margin: 15px 0 20px 0;
+    font-family: PingFangSC-Light;
+    font-size: 12px;
+    color: #A3A8AD;
+    text-align: center;
+    line-height: 14px;
+}
+.client_tags_con{
+    height: 30px;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 2px;
+}
+.client_tags_con li{
+    font-family: PingFangSC-Light;
+    display: inline;
+    font-size: 12px;
+    padding: 4px 12px;
+    line-height: 25px;
+    color: #C6A180;
+    margin-right: 10px;
+    background: rgba(198,161,128,0.10);
+    border-radius: 3px;
+}
 
+
+/**
+*  评论
+*/
+.client_thinking_list{
+    position: relative;
+    width: 1224px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.client_thinking_list li{
+    background: #FFFFFF;
+    border-radius: 4px;
+    float: left;
+    width: 384px;
+    height: 216px;
+    padding: 32px;
+    box-sizing: border-box;
+    margin: 12px;
+    position: relative;
+    text-align: left;
+}
+.comma{
+    position: absolute;
+    left: 24px;
+    top: 24px;
+    display: block;
+    height: 40px;
+    width: 51px;
+    background: url(../img/humanTrans/comma.png) no-repeat;
+}
+.comma_reverse{
+    position: absolute;
+    right: 40px;
+    bottom: 80px;
+    display: block;
+    height: 40px;
+    width: 51px;
+    background: url(../img/humanTrans/comma.png) no-repeat;
+    transform: rotate(180deg);
+}
+.client_infoBox{
+    margin-top: 16px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.thinking{
+    font-family: PingFangSC-Light;
+    font-size: 14px;
+    color: #2B333D;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin-top: 10px;
+}
+.client_info_img{
+    float: left;
+    width: 42px;
+    height: 42px;
+    border-radius: 21px;
+}
+.client_info{
+    float: left;
+    margin-left: 12px;
+    height: 42px;
+    padding-top: 1px;
+    text-align: left;
+}
+.client_name{
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #636970;
+    letter-spacing: 0;
+    line-height: 13px;
+    margin-top: 6px;
+}
+.order_info{
+    margin-top: 8px;
+    font-family: PingFangSC-Light;
+    font-size: 12px;
+    color: #A3A8AD;
+    letter-spacing: 0;
+    line-height: 12px;
+}
+
+/**
+* footer
+*/
+#ft{
+    background-color: #F7F9FA;
+    line-height: 24px;
+    padding: 29px 0;
+    text-align: center;
+    color: #bcbcbc;
+}
+#ft p a{
+    font-size: 12px;
+    line-height: 12px;
+    margin: 0 8px;
+    color: #666;
+}
+#ft p a:hover{
+    text-decoration: underline;
+    color: #929292;
+}
+#ft p span{
+    font-size: 12px;
+    margin: 0 5px;
+    color: #666;
+}
