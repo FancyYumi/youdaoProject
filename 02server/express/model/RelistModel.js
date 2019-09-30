@@ -1,12 +1,12 @@
 //引入模块
 let SqlBase = require("./SqlBase");
-class HumanTransModel extends SqlBase {
+class RelistModel extends SqlBase {
   constructor() {
     super();
   }
-  getAllImg(callback) {
-    let sql = "select * from humantransimg";
-    let img = {};
+  getAllRelist(callback) {
+    //3,编写sql语句
+    let sql = "select * from relist";
     //4,进行插入操作
     /**
      *query，mysql语句执行的方法
@@ -23,4 +23,4 @@ class HumanTransModel extends SqlBase {
   }
 }
 
-module.exports = HumanTransModel;
+module.exports = RelistModel;

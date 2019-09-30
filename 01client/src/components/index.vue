@@ -1,5 +1,4 @@
 
-<<<<<<< HEAD
 <template >
   <div id="index">
     <div class="header">
@@ -17,19 +16,29 @@
           <a href>惠惠</a>
         </li>
         <li>
-          <a href>人工翻译</a>
+          <router-link :to="{path:'/humanTrans'}">
+            <a href>人工翻译</a>
+          </router-link>
         </li>
         <li>
-          <a href>云笔记</a>
+          <router-link :to="{path:'/cloudNote'}">
+            <a href>云笔记</a>
+          </router-link>
         </li>
         <li>
-          <a href>精品课</a>
+          <router-link :to="{path:'/courses'}">
+            <a href>精品课</a>
+          </router-link>
         </li>
         <li>
-          <a href>翻译</a>
+          <router-link :to="{path:'/translate'}">
+            <a href>翻译</a>
+          </router-link>
         </li>
         <li>
-          <a href>背单词</a>
+          <router-link :to="{path:'/reciteWords'}">
+            <a href>背单词</a>
+          </router-link>
         </li>
         <li>
           <a href>词典</a>
@@ -44,6 +53,8 @@
     <div class="margin2"></div>
     <div class="search" id="totop">
       <translateForm v-on:formSubmit="translateText"></translateForm>
+    </div>
+    <div class="translated">
       <h2>{{translatedText}}</h2>
     </div>
     <div class="margin3">
@@ -67,13 +78,18 @@
       <div class="wrap">
         <div class="conLeft">
           <div class="titleBox">
-            <a>精品阅读</a>
-            <a>必备课程</a>
-            <a>折扣精选</a>
+            <a>
+              <router-link :to="{path:'/conBox1'}">精品阅读</router-link>
+            </a>
+            <a>
+              <router-link :to="{path:'/conBox2'}">必备课程</router-link>
+            </a>
+            <a>
+              <router-link :to="{path:'/conBox1'}">折扣精选</router-link>
+            </a>
           </div>
-          <conBox1></conBox1>
-          <!-- <conBox2></conBox2>
-          <conBox3></conBox3>-->
+          <!-- <conBox1></conBox1> -->
+          <router-view></router-view>
         </div>
         <div class="conRight">
           <div class="attach">
@@ -85,7 +101,7 @@
         </div>
       </div>
     </div>
-    <div class="footer" >
+    <div class="footer">
       <div class="wrap">
         <ul>
           <li>
@@ -145,16 +161,7 @@
       </div>
     </div>
   </div>
-=======
-<template>
-  <div class="index" v-title data-title="有道背单词">
-    <h1>hello</h1>
- </div>
-
-
->>>>>>> a2192f30034d235973a2df89edb79c2272e5aa39
 </template>
-
 <script>
 import Vue from "vue";
 import axios from "axios";
@@ -162,11 +169,10 @@ import VueAxios from "vue-axios";
 Vue.use(VueAxios, axios);
 
 import translateForm from "./translateForm";
-<<<<<<< HEAD
 import conBox1 from "./conBox1";
+import conBox2 from "./conBox2";
+import conBox3 from "./conBox3";
 
-=======
->>>>>>> a2192f30034d235973a2df89edb79c2272e5aa39
 export default {
   name: "index",
   data: function() {
@@ -175,12 +181,10 @@ export default {
     };
   },
   components: {
-<<<<<<< HEAD
     translateForm,
-    conBox1
-=======
-     translateForm
->>>>>>> a2192f30034d235973a2df89edb79c2272e5aa39
+    conBox1,
+    conBox2,
+    conBox3
   },
   methods: {
     translateText: function(text, language) {
@@ -197,28 +201,8 @@ export default {
         });
     }
   }
-
-  //   $(function(){
-  //         //获取导航距离页面顶部的距离
-  //         var toTopHeight = $(".timeNav").offset().top;
-  //         //监听页面滚动
-  //         $(window).scroll(function() {
-  //             //判断页面滚动超过导航时执行的代码
-  //             if( $(document).scrollTop() > toTopHeight ){
-  //                     //fixed定位
-  //                     $("#nav").addClass("nav_fixed");
-  //             }else{//
-  //                     //移除fixed定位，采用默认流布局
-  //                     $("#nav").removeClass("nav_fixed");
-  //             }
-  //         });
 };
 </script>
 <style scoped>
-<<<<<<< HEAD
 @import "../assets/style/index.css";
-=======
-
-
->>>>>>> a2192f30034d235973a2df89edb79c2272e5aa39
 </style>

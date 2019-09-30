@@ -1,5 +1,5 @@
 <template>
-  <div class="conBox1">
+  <div class="conBox3">
     <div class="scroll">
       <div class="news"  v-for="(item,index) in relist" :key="index">
         <a href>
@@ -32,7 +32,7 @@ import axios from "axios";
 import VueAxios from "vue-axios";
 Vue.use(VueAxios, axios);
 export default {
-  name: "conBox1",
+  name: "conBox3",
   data: function() {
     return {
       relist:[]

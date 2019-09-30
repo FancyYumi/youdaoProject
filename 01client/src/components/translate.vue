@@ -89,7 +89,7 @@ export default {
     };
   },
   mounted() {
-    Vue.axios.get(`http://localhost:8888/index`).then(response => {
+    Vue.axios.get(`http://localhost:8888/head`).then(response => {
       console.log(response);
       this.object = response.data;
     });
@@ -199,7 +199,7 @@ li {
 }
 .fanyi__nav__list li a {
   text-decoration: none;
-  color: #f2f2f2;
+  color: black;
   cursor: pointer;
 }
 .input {

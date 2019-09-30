@@ -1,6 +1,4 @@
-
 import Vue from 'vue'
-
 
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
@@ -24,6 +22,11 @@ import translate from './components/translate.vue'
 import courses from './components/courses.vue'
 import cloudNote from './components/cloudNote.vue'
 import humanTrans from './components/humanTrans.vue'
+import conBox1 from './components/conBox1.vue'
+import conBox2 from './components/conBox2.vue'
+import conBox3 from './components/conBox3.vue'
+
+
 
 // import 'jquery'
 
@@ -36,12 +39,18 @@ Vue.config.productionTip = false
 
 
 const routes = [
-  { path: '/index', component: index, meta: { title: '有道首页'}},
+  { path: '/index', component: index, meta: { title: '有道首页'},children:[
+    { path: '/conBox1', component: conBox1},
+    { path: '/conBox2', component: conBox2},
+    { path: '/conBox3', component: conBox3},
+  ]},
   { path: '/reciteWords', component: reciteWords,meta: { title: '有道背单词'} },
   { path: '/translate', component: translate,meta: { title: '在线翻译-有道'} },
   { path: '/courses', component: courses,meta: { title: '有道精品课-为你精选好课'} },
   { path: '/cloudNote', component: cloudNote,meta: { title: '有道云笔记|5000万用户的选择'} },
   { path: '/humanTrans', component: humanTrans,meta: { title: '有道人工翻译-网易旗下专业人工翻译'} },
+ 
+
 
 ]
 const router = new VueRouter({

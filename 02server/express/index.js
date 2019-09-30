@@ -25,13 +25,14 @@ let ip = "localhost:";
 let port = 8888;
 
 
-let indexController = require("./controllers/IndexController");
-app.get("/index", indexController.index);
+let headController = require("./controllers/HeadController");
+app.get("/head", headController.head);
+let course = require("./controllers/Course");
+app.get("/course", course.index);
 
-<<<<<<< HEAD
 let cloudPicController = require("./controllers/CloudPicController");
 app.get("/pic", cloudPicController.pic);
-=======
+
 let cloudNoteController = require("./controllers/CloudNoteController");
 app.get("/cloudNote", cloudNoteController.cloudNote);
 
@@ -40,10 +41,9 @@ app.get("/humanTrans", humanTransController.humanTrans);
 
 let humanTransCommentsController = require("./controllers/humanTransCommentsController");
 app.get("/humanTransComments", humanTransCommentsController.comments);
->>>>>>> a2192f30034d235973a2df89edb79c2272e5aa39
 
-let readController = require("./controllers/ReadController");
-app.get("/read", readController.data);
+let relistController = require("./controllers/RelistController");
+app.get("/relist", relistController.relist);
 //4,进行监听
 app.listen(port, function() {
   console.log(`${port}启动`);

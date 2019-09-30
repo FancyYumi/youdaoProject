@@ -1,10 +1,10 @@
 //引入模块
 let SqlBase = require("./SqlBase");
-class CourseModel extends SqlBase {
+class HeadModel extends SqlBase {
   constructor() {
     super();
   }
-  getAllCourse(callback) {
+  getAllHead(callback) {
     //3,编写sql语句
     let sql = "select * from header";
     //4,进行插入操作
@@ -23,4 +23,4 @@ class CourseModel extends SqlBase {
   }
 }
 
-module.exports = CourseModel;
+module.exports = HeadModel;
